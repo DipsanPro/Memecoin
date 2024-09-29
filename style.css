@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive, sans-serif;
+    background-color: #fdd360;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.big-header {
+    background-color: #ffcc00;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.logo-text h1 {
+    font-size: 2em;
+    color: #ff5252;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5252;
+}
+
+/* Section General */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./assets/hero-background.jpg') no-repeat center center/cover;
+    color: rgb(3, 3, 3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.cta-button {
+    background-color: #ff5252;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #03a9f4;
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Buy Section */
+.buy-section {
+    background-color: #ffcc00;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.buy-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.buy-section p {
+    font-size: 1.1em;
+}
+
+.buy-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buy-button, .pump-button {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-button:hover, .pump-button:hover {
+    background-color: #03a9f4;
+    transform: scale(1.05);
+}
+
+.pump-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Socials Section */
+.socials {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.socials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a img {
+    width: 40px;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Contract Address */
+.contract-section {
+    background-color: #d9ec2c;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contract-section p {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* Fun Click Game Section */
+.click-game {
+    background-color: #03a9f4;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.click-game h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin {
+    font-size: 2.5em;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.coin:hover {
+    transform: scale(1.2);
+}
+
+.score {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}

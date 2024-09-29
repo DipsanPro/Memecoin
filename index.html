@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FURRYFUND - A Memecoin for Animal Lovers</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <style>
+            /* Additional styles for the game */
+            body {
+                font-family: 'Fredoka One', cursive;
+                background-color: #f0f0f0; /* Background color for the whole page */
+                text-align: center;
+            }
+            .game-area {
+                position: relative;
+                height: 400px; /* Set height for the game area */
+                border: 2px solid #333;
+                overflow: hidden;
+                background-color: #03a9f4; /* Background color of the game area */
+                margin: 20px auto; /* Center the game area */
+                width: 80%; /* Set width for the game area */
+            }
+            .coin, .bomb {
+                position: absolute;
+                width: 50px; /* Set size of coins and bombs */
+                height: 50px;
+                pointer-events: auto; /* Allow clicks on the falling items */
+            }
+            .coin {
+                background: url('logo.png') no-repeat center center; /* Use your logo */
+                background-size: cover;
+            }
+            .bomb {
+                background: url('bomb.png') no-repeat center center; /* Add a bomb image */
+                background-size: cover;
+            }
+            .start-button {
+                background-color: #ff5722; /* Start button color */
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 20px 0; /* Add margin for spacing */
+            }
+        </style>
+    </head>
+<body>
+    <!-- Big Header Section -->
+    <header class="big-header">
+        <div class="logo-text">
+            <img src="logo.png" alt="FURRYFUND Logo" class="logo">
+            <h1>FURRYFUND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#buy">Buy Now</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#game">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>FURRYFUND: A Memecoin for Animal Lovers!</h2>
+            <p style="margin-bottom: 5%;">Join the FURRYFUND community and support a noble cause while having fun!</p>
+            <a href="#buy" class="cta-button">Buy FURRYFUND Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About FURRYFUND</h2>
+        <p>FURRYFUND is a community-driven memecoin designed for pet lovers and animal enthusiasts. With a playful mascot of a cartoon dog, FURRYFUND aims to create a fun and engaging ecosystem where users can trade, hold, and participate in charitable initiatives that support animal shelters and rescue organizations.</p>
+        <p>By investing in FURRYFUND, you're joining a vibrant community of pet lovers while contributing to a noble cause. A portion of every transaction is donated to animal welfare organizations. Join us in making a difference, and enjoy exclusive access to community events, giveaways, and unique NFTs featuring adorable pets!</p>
+    </section>
+
+    <!-- Buy Section -->
+    <section id="buy" class="buy-section">
+        <h2>How to Buy FURRYFUND</h2>
+        <p>Get your FURRYFUND coins on supported exchanges. Join our community and trade for a cause!</p>
+        <div class="buy-buttons">
+            <a href="#contract" class="buy-button">Buy Now</a>
+            <a href="#pumpfun" class="pump-button">
+                <img src="pump.jpg" alt="PumpFun Logo" class="pump-logo">
+                PumpFun
+            </a>
+        </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section id="socials" class="socials">
+        <h2>Follow Us on Socials</h2>
+        <div class="social-icons">
+            <a href="https://t.me/YourTelegramLink" target="_blank"><img src="tg.png" alt="Telegram"></a>
+            <a href="https://twitter.com/YourTwitterLink" target="_blank"><img src="x.png" alt="Twitter"></a>
+            <a href="https://discord.com/YourDiscordLink" target="_blank"><img src="discord.png" alt="Discord"></a>
+        </div>
+    </section>
+
+    <!-- Contract Address Section -->
+    <section id="contract" class="contract-section">
+        <h2>Contract Address</h2>
+        <p>0x1234567890abcdef1234567890abcdef12345678</p>
+    </section>
+
+    <section id="game" class="click-game">
+        <h2>Catch the Coins!</h2>
+        <p>How many coins can you collect? Avoid the bombs!</p>
+        <button class="start-button" id="startButton">Start Game</button>
+        <div class="game-area" id="gameArea" style="display:none;">
+            <!-- Falling coins and bombs will be dynamically added here -->
+        </div>
+        <p class="score">Points: <span id="score">0</span></p>
+        <p class="high-score">High Score: <span id="highScore">0</span></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 FURRYFUND. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
